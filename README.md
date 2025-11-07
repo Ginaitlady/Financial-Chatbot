@@ -1,10 +1,10 @@
-# 💰 Financial Chatbot
+# Financial Chatbot
 
 A **deep learning-powered chatbot** designed to answer financial questions using a **hybrid model architecture**.
 
 ---
 
-## 📘 Overview
+## Overview
 
 This project implements a sophisticated chatbot that can handle two distinct types of user queries:
 
@@ -26,15 +26,15 @@ To achieve this, the chatbot uses a **two-stage hybrid model**:
 
 ---
 
-## ⚙️ How It Works: Architecture
+## How It Works: Architecture
 
 When a user inputs a question, it goes through the following pipeline:
 
-### 🧠 1. Classification
+### 1. Classification
 - The input is tokenized using the **`lstm_tokenizer`**.
 - It's fed into the **`bidirectional_LSTM.h5`** model, which outputs a score.
 
-### 🔀 2. Branching Logic
+### 2. Branching Logic
 
 #### If **score > 0.5** → *Dictionary Query*
 - The system identifies the query as a request for a definition.  
@@ -49,20 +49,13 @@ When a user inputs a question, it goes through the following pipeline:
 
 ---
 
-## 🧩 Project Structure
-
-
+## Project Structure
 
 <img width="690" height="639" alt="image" src="https://github.com/user-attachments/assets/6f6d997b-b951-4718-968c-a2612de2d256" />
 
-
-
-*(Insert architecture image below)*  
-![Architecture Diagram](image)
-
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3**
 - **TensorFlow & Keras** — For building and serving both the LSTM and Seq2Seq models.  
